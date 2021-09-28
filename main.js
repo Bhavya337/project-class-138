@@ -25,16 +25,12 @@ poseNet.on('pose',gotPoses);
 function modelLoaded(){
     console.log('poseNet is intilazied')
 }
+game_status = "";
 
 
 function draw(){
-    background(0);
-    image(video,0,0,700,600);
-
-}
-
-function draw(){
-
+  background(0);
+  image(video,0,0,700,600);
     background(0); 
     image(video, 0, 0, 700, 600);
   
@@ -45,6 +41,7 @@ function draw(){
     fill("black");
     stroke("black");
     rect(0,0,20,700);}
+    if(game_status == "start")
     
 function startGame()
 {
